@@ -1,8 +1,8 @@
 steps:
-    - name: "gcr.io/cloud-builders/docker"
-      args: ["build", "--tag=gcr.io/$PROJECT_ID/readmeio", "."]
-    - name: "gcr.io/${PROJECT_ID}/readmeio"
-      args: ["-h"]
-  
-  images: ["gcr.io/$PROJECT_ID/readmeio"]
-  tags: ["cloud-builders-community"]
+- name: "gcr.io/cloud-builders/docker"
+  args: ["build", "--tag=gcr.io/$PROJECT_ID/readmeio", "."]
+- name: "gcr.io/${PROJECT_ID}/readmeio"
+  args: ["-h"]
+
+images: ["gcr.io/$PROJECT_ID/readmeio"]
+tags: ["cloud-builders-community"]
